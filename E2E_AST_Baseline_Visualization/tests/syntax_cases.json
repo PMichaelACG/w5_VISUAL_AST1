@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sample",
+    "input": "let total=12;\n",
+    "status": 0,
+    "stderr": ""
+  },
+  {
+    "id": "compact",
+    "input": "let x=0;",
+    "status": 0,
+    "stderr": ""
+  },
+  {
+    "id": "identifier",
+    "input": "let letter_2=007;\n",
+    "status": 0,
+    "stderr": ""
+  },
+  {
+    "id": "whitespace",
+    "input": "\tlet\tN_2 =\n0007;\n",
+    "status": 0,
+    "stderr": ""
+  },
+  {
+    "id": "comments",
+    "input": "// lead\nlet n // name\n= 12; // end",
+    "status": 0,
+    "stderr": ""
+  },
+  {
+    "id": "large_integer",
+    "input": "let n=9999999999999999999999999999999999999999;\n",
+    "status": 0,
+    "stderr": ""
+  },
+  {
+    "id": "missing_semicolon",
+    "input": "let total=12\n",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "wrong_order",
+    "input": "let = total 12;\n",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "keyword_as_name",
+    "input": "let print=1;\n",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "addition",
+    "input": "let total=12+3;\n",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "negative",
+    "input": "let total=-12;\n",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "print_statement",
+    "input": "print(total);\n",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "int_declaration",
+    "input": "int total=12;\n",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "two_declarations",
+    "input": "let a=1; let b=2;\n",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "empty",
+    "input": "",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "comment_only",
+    "input": "// no declaration",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "malformed_number",
+    "input": "let n=12abc;\n",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  },
+  {
+    "id": "unknown_character",
+    "input": "let n=@;\n",
+    "status": 1,
+    "stderr": "LEX_ERROR unexpected character: @\n"
+  },
+  {
+    "id": "trailing_character",
+    "input": "let n=1; @\n",
+    "status": 1,
+    "stderr": "LEX_ERROR unexpected character: @\n"
+  },
+  {
+    "id": "missing_value",
+    "input": "let n=;\n",
+    "status": 1,
+    "stderr": "PARSER_ERROR syntax error\n"
+  }
+]

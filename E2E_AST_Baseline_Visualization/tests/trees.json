@@ -1,0 +1,64 @@
+[
+  {
+    "id": "declaration_shape",
+    "input": "let total=12;",
+    "tree": [
+      "Program",
+      [
+        [
+          "statement",
+          [
+            "Declaration: let",
+            [
+              [
+                "name",
+                [
+                  "Identifier: total",
+                  []
+                ]
+              ],
+              [
+                "initializer",
+                [
+                  "Integer: 12",
+                  []
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "spelling_preserved",
+    "input": "let total=00012;",
+    "tree": [
+      "Program",
+      [
+        [
+          "statement",
+          [
+            "Declaration: let",
+            [
+              [
+                "name",
+                [
+                  "Identifier: total",
+                  []
+                ]
+              ],
+              [
+                "initializer",
+                [
+                  "Integer: 00012",
+                  []
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  }
+]
